@@ -1,0 +1,74 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Varela|Varela+Round');
+
+/*
+  VARIABLES
+*/
+
+/*Fonts*/
+$font-bitter: 'Bitter', serif;
+$font-varela: 'Varela', sans-serif;
+$font-varela-round: 'Varela Round', sans-serif;
+
+/*Colors*/
+$main: #4D4382;
+$dark: #252525;
+$dark-alt: #303030;
+$cat-one: #299EC3;
+$cat-two: #EE6151;
+$cat-three: #84C14F;
+$cat-four: #5DCFF3;
+$cat-five: #FCC44D;
+$cat-six: #A99765;
+$cat-palette: #299EC3, #EE6151, #84C14F, #5DCFF3, #FCC44D, #A99765;
+$cat-palette-length: length($cat-palette);
+/*
+  DIMENSIONS
+*/
+$full-width: 940px;
+$article: 620px;
+$aside: 300px;
+
+/*
+  LAYOUT
+*/
+body{
+  width: auto;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+main.main-content{
+  width: $full-width;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+section{
+  &.container{
+    width: 100%;
+  }
+  &.article{
+    float: left;
+    overflow: hidden;
+    width: $article;
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+  &.first-category{
+    width: 100%;
+  }
+}
+.sidebar-container{
+  float: right;
+  width: $aside;
+  overflow: hidden;
+}
+footer{
+  background-color: $dark;
+  clear: both;
+}
+@import "navigation";

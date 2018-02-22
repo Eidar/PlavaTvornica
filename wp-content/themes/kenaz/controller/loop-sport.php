@@ -13,7 +13,7 @@ if( $sport->have_posts() ):?>
     <?php
     while( $sport->have_posts() ): $sport->the_post(); ?>
         <div id="post">
-            <div class="row thumbnail-img"><?php the_post_thumbnail(); ?></div>
+            <div class="row thumbnail-img"><?php the_post_thumbnail('image-normal'); ?></div>
             <div class="row info">
                 <div class="col-md-12 post-info">
                     <small class="col-md-6 post-date">

@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="<?php bloginfo('charset'); ?>">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kenaz</title>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(array('kenaz-body')); ?>>
 
-    <div class="nav-container">
-        <div class="row main-nav">
-                <div class="col-md-3 logo"></div>
-                <div class="col-md-3 brand"></div>
-                <div class="col-md-6 pages">
-                <?php wp_nav_menu(array(
-                    'theme_location'=>'main',
-                    'container_class'=>'main-navigation',
-                    'menu_class'=> 'nav nav-main'
-                )); ?>
-                </div>
-
-        </div>
-
-        <div class="row secondary-nav">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                <?php wp_nav_menu(array(
-                    'theme_location'=>'secondary',
-                    'container_class'=>'secondary-navigation',
-                    'menu_class'=> 'nav nav-secondary'
-                )); ?>
-                </div>
-        </div>
-    </ div>
+    <main class="main-nav">
+        <nav class="nav-wrapper">
+        <nav class="logo"><a href="<?php get_home_url(); ?>"> <img src="<?php echo get_bloginfo('template_url') ?>/assets/kenaz-brand.png"></a></nav>
+        <nav class="brand"><h5>Kenaz</h5></nav>
+        <nav class="search"><img src="<?php echo get_bloginfo('template_url') ?>/assets/search-small.png"></nav>
+        <nav class="pages">
+        <?php wp_nav_menu(array(
+            'theme_location'=>'main',
+            'container_class'=>'nav-wrapper-main', //div
+            'menu_class'=> 'nav nav-main' //ul
+        )); ?>
+        </nav>
+        </nav>
+    </main>
+    <main class="secondary-nav">
+            <?php wp_nav_menu(array(
+                'theme_location'=>'secondary',
+                'container_class'=>'nav-wrapper',
+                'menu_class'=> 'nav nav-secondary'
+            )); ?>
+    </main>
