@@ -20,12 +20,12 @@ function kenaz_theme_setup() {
 
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
-    add_theme_support('image-extra-small', 70, 70);
-    add_theme_support('image-small', 120, 90);
-    add_theme_support('image-normal', 170, 30);
-    add_theme_support('image-large', 230, 150);
-    add_theme_support('image-wide', 260, 150);
-    add_theme_support('image-extra-large', 940, 400);
+    add_image_size('image-extra-small', 70, 70, true);
+    add_image_size('image-small', 120, 90, true);
+    add_image_size('image-normal', 170, 130, true);
+    add_image_size('image-large', 230, 150, true);
+    add_image_size('image-wide', 260, 150, true);
+    add_image_size('image-extra-large', 940, 400, true);
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 }
 add_action('init', 'kenaz_theme_setup');
