@@ -10,20 +10,17 @@
     <section class="container">
         <section class="article">
     <!-- FIRST POST CATEGORY -->
-        <section class="first-category">
-            <p>First</p>
+        <section class="category category-first">
             <?php get_template_part('controller/loop', 'news'); ?>
         </section>
     <!-- SECOND POST CATEGORY -->
-        <section class="second-category">
-            <p>Second</p>
+        <section class="category category-second">
             <?php get_template_part('controller/loop', 'sport'); ?>
         </section>
     <!-- BANNER MIDDLE -->
         <section class="banner-mid"><img src="http://via.placeholder.com/620x120"></section>
     <!-- THIRD POST CATEGORY -->
-        <section class="third-category">
-            <p>Third</p>
+        <section class="category category-third">
             <?php get_template_part('controller/loop', 'business'); ?>
         </section>
     <section class="banner-low"><img src="http://via.placeholder.com/620x120"></section>

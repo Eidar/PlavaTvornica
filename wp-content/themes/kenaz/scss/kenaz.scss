@@ -34,6 +34,31 @@ $aside: 300px;
 */
 body{
   width: auto;
+  font-family: $font-bitter;
+  small{
+    font-family: $font-varela-round;
+    font-size: 12px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  h5 {
+    font-weight: 700;
+    font-size: 14px;
+  }
 }
 img{
   max-width: 100%;
@@ -58,7 +83,7 @@ section{
     padding-right: 10px;
     margin-right: 10px;
   }
-  &.first-category{
+  &.main-carousel{
     width: 100%;
   }
 }
@@ -67,8 +92,55 @@ section{
   width: $aside;
   overflow: hidden;
 }
+.category{
+  max-width: 620px;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 10px 20px 0px;
+  &-first {
+    border-left: 10px solid $cat-one;
+  }
+  &-second {
+    border-left: 10px solid $cat-three;
+    clear: both;
+  }
+  &-third {
+    border-left: 10px solid $cat-two;
+  }
+  h3, h2{
+    font-family: $font-bitter;
+  }
+}
+.cat-head{
+  padding: 20px;
+  margin-bottom: 30px;
+  > h1 {
+    width: 50%;
+    float: left;
+  }
+  > small {
+    padding-top: 10px;
+    float: right;
+  }
+}
+.post-title{
+  margin-top: 5px;
+}
 footer{
   background-color: $dark;
   clear: both;
+}
+/*
+  POSTS
+*/
+.post{
+  display: block;
+  position: relative;
+  width: 170px;
+  float: left;
+  margin-left: 20px;
+  &-comments{
+    float: right;
+  }
 }
 @import "navigation";
