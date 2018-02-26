@@ -45,6 +45,41 @@ function sidebar_setup() {
 	));
 }
 add_action('widgets_init','sidebar_setup');
+
+function footer_setup() {
+    register_sidebar(array(
+        'name' => 'Footer Column One',
+        'id' => 'footer-one',
+        'class' => 'footer-column',
+        'description' => 'Footer column one',
+        'before-widget' => '<aside id="%1s" class="widget %2$s">',
+        'after-widget' => '</aside>',
+        'before-title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
+    ));
+    register_sidebar(array(
+        'name' => 'Footer Column Two',
+        'id' => 'footer-two',
+        'class' => 'footer-column',
+        'description' => 'Footer column two',
+        'before-widget' => '<aside id="%1s" class="widget %2$s">',
+        'after-widget' => '</aside>',
+        'before-title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
+    ));
+    register_sidebar(array(
+        'name' => 'Footer Column Three',
+        'id' => 'footer-three',
+        'class' => 'footer-column',
+        'description' => 'Footer column three',
+        'before-widget' => '<aside id="%1s" class="widget %2$s">',
+        'after-widget' => '</aside>',
+        'before-title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
+    ));
+}
+add_action('widgets_init','footer_setup');
+
 /*
 	*   THEME SUPPORT
 */

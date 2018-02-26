@@ -11,7 +11,7 @@
     <main class="main-nav">
         <nav class="nav-wrapper">
         <nav class="logo"><a href="<?php get_home_url(); ?>"> <img src="<?php echo get_bloginfo('template_url') ?>/assets/kenaz-brand.png"></a></nav>
-        <nav class="brand"><h5>Kenaz</h5></nav>
+        <nav class="brand"><h1>Kenaz</h1></nav>
         <nav class="search"><img src="<?php echo get_bloginfo('template_url') ?>/assets/search-small.png"></nav>
         <nav class="pages">
         <?php wp_nav_menu(array(

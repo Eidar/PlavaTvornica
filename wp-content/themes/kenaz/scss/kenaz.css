@@ -55,7 +55,6 @@ body {
     font-family: "Varela Round", sans-serif;
     font-size: 12px; }
   body h1 {
-    font-weight: 700;
     font-size: 24px; }
   body h2 {
     font-weight: 700;
@@ -141,6 +140,10 @@ footer {
   .post-comments {
     float: right; }
 
+/* UTILITIES */
+.bold {
+  font-weight: bold; }
+
 /*
   NAVIGATION
 */
@@ -219,11 +222,9 @@ footer {
   vertical-align: bottom;
   float: left;
   height: 60%;
-  font-size: 24px;
-  font-family: "Bitter", serif;
   color: #ffffff;
   line-height: 50px;
-  padding: 0px 15px 0px 15px; }
+  padding: 0px 15px 0px 10px; }
 
 .logo, .search {
   float: right;

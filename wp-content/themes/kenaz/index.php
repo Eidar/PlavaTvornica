@@ -45,8 +45,8 @@
     </section>
     <!-- SIDEBAR -->
         <aside class=sidebar-container">
-            <section class="banner-sidebar"><img src="http://via.placeholder.com/300x120"></section>
             <?php get_template_part('controller/_sidebar', 'sidebar'); ?>
+            <section class="banner-sidebar"><img src="http://via.placeholder.com/300x120"></section>
         </aside>
     </section>
 

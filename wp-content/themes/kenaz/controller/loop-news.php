@@ -6,7 +6,7 @@ $settings = array(
 );
 $category = new WP_Query($settings); ?>
 <section class="cat-head">
-    <h1><?php echo get_cat_name(4); ?></h1>
+    <h1 class="bold"><?php echo get_cat_name(4); ?></h1>
     <small>See All</small>
 </section>
 <?php
